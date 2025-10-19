@@ -150,13 +150,52 @@
       border: none;
       border-top: 1px dashed rgba(0, 0, 0, 0.06);
     }
+
+    .nav-footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: var(--glass);
+      border-radius: var(--radius);
+      text-align: center;
+      border: 1px solid rgba(255, 122, 182, 0.12);
+    }
+
+    .nav-footer a {
+      color: var(--accent-1);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-footer a:hover {
+      color: #332532;
+      text-decoration: underline;
+    }
+
+    .nav-footer .current {
+      color: #332532;
+      font-weight: 600;
+    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="grid">
-      <main class="card">
+    <nav class="nav-footer">
+      <div>
+        <strong>Workshop Navigation:</strong><br><br>
+        <a href="index.html">Installation Guide</a> |
+        <a href="intro.html">Introduction</a> |
+        <a href="challenge1.html" class="current">Challenge 1</a> |
+        <a href="challenge2.html">Challenge 2</a> |
+        <a href="challenge3.html">Challenge 3</a> |
+        <a href="challenge4.html">Challenge 4</a> |
+        <a href="challenge5.html">Challenge 5</a>
+      </div>
+    </nav>
+
+    <main class="card">
         <div class="section-title">
           <h2>Challenge 1: Embed a Video</h2>
         </div>
@@ -261,7 +300,19 @@ export default App;
           </ol>
         </section>
       </main>
-    </div>
+
+    <nav class="nav-footer">
+      <div>
+        <strong>Workshop Navigation:</strong><br><br>
+        <a href="index.html">Installation Guide</a> |
+        <a href="intro.html">Introduction</a> |
+        <a href="challenge1.html" class="current">Challenge 1</a> |
+        <a href="challenge2.html">Challenge 2</a> |
+        <a href="challenge3.html">Challenge 3</a> |
+        <a href="challenge4.html">Challenge 4</a> |
+        <a href="challenge5.html">Challenge 5</a>
+      </div>
+    </nav>
   </div>
 </body>
 
