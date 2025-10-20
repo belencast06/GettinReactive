@@ -42,12 +42,31 @@
       gap: 28px;
     }
 
+    header.hero {
+            background: linear-gradient(135deg, rgba(255, 122, 182, 0.12), rgba(255, 179, 217, 0.08));
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            box-shadow: 0 8px 30px rgba(109, 70, 94, 0.08);
+            border: 1px solid rgba(255, 122, 182, 0.12);
+        }
+
     .card {
       background: var(--card);
       padding: 20px;
       border-radius: 14px;
       border: 1px solid rgba(0, 0, 0, 0.04);
       box-shadow: 0 8px 20px rgba(100, 40, 80, 0.03);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.2px;
     }
 
     .section-title {
@@ -69,6 +88,22 @@
 
     ol.steps li {
       margin: 14px 0;
+    }
+
+    
+    .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            flex: 0 0 80px;
+            box-shadow: 0 6px 18px rgba(255, 122, 182, 0.22), inset 0 -6px 12px rgba(0, 0, 0, 0.06);
     }
 
     pre.cmd {
@@ -131,22 +166,32 @@
 
 <body>
   <div class="wrap">
-    <nav class="nav-footer">
+    <header class="hero">
+      <div class="logo">Frontera Devs</div>
       <div>
-        <strong>Workshop Navigation:</strong><br><br>
-        <a href="index.html">Installation Guide</a> |
-        <a href="intro.html">Introduction</a> |
-        <a href="challenge1.html">Challenge 1</a> |
-        <a href="challenge2.html" class="current">Challenge 2</a> |
-        <a href="challenge3.html">Challenge 3</a> |
-        <a href="challenge4.html">Challenge 4</a> |
-        <a href="challenge5.html">Challenge 5</a>
+        <h1>Challenge 2</h1>
+        <p class="lead">Add a Dynamic Color-Changing Background!</p>
       </div>
-    </nav>
+      <nav class="nav-header">
+       <div>
+          <!-- <strong>Workshop Navigation:</strong><br><br> -->
+           <strong>Workshop Navigation:</strong><br><br>
+          <a href="index.html">Installation Guide</a> |
+          <a href="intro.html" class="current">Introduction</a> |
+          <a href="challenge1.html">Challenge 1</a> |
+          <a href="challenge2.html" class="current">Challenge 2</a> |
+          <a href="challenge3.html">Challenge 3</a> |
+          <a href="challenge4.html">Challenge 4</a> |
+          <a href="challenge5.html">Challenge 5</a>
+        </div>
+      </nav>
+    </header>
 
+
+  <div class="wrap"> 
     <main class="card">
       <div class="section-title">
-        <h2>Challenge 2: Dynamic Color-Changing Background</h2>
+        <!-- <h2>Challenge 2: Dynamic Color-Changing Background</h2> -->
       </div>
 
       <ol class="steps">
@@ -270,18 +315,19 @@ export default App;
       </ol>
     </main>
 
-    <nav class="nav-footer">
+    <!-- <nav class="nav-footer">
       <div>
         <strong>Workshop Navigation:</strong><br><br>
         <a href="index.html">Installation Guide</a> |
         <a href="intro.html">Introduction</a> |
         <a href="challenge1.html">Challenge 1</a> |
         <a href="challenge2.html" class="current">Challenge 2</a> |
-        <a href="challenge3.html">Challenge 3</a> |
+        <a href="challenge3.html">Challenge 3</a> |S
         <a href="challenge4.html">Challenge 4</a> |
         <a href="challenge5.html">Challenge 5</a>
       </div>
-    </nav>
+    </nav> -->
+    </div>
   </div>
 </body>
 
